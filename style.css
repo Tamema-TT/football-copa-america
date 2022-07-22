@@ -1,0 +1,272 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+/* Common styles */
+:root {
+    --content-width: 1160px;
+    --white-text: #ffffff;
+    --grey-text: #6C6C6C
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.half-width {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.half-width img {
+    width: 100%;
+}
+
+.pink-button {
+    background-color: #E02C6D;
+    height: 44px;
+    min-width: 123px;
+    max-width: 168px;
+    display: flex;
+    align-items: center;
+    gap: 8px;    
+    justify-content: center;
+}
+
+.pink-button i {
+    color: var(--white-text);
+    font-size: 24px;
+}
+
+.pink-button p {
+    color: var(--white-text);
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+}
+
+/* Header Styles */
+header {
+    align-items: center;
+    background-color: #2D25A0;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 680px;
+    margin-bottom: 70px;
+}
+
+.nav-contents {
+    align-items: center;
+    display: flex;
+    height: 44px;
+    justify-content: space-between;
+    margin-top: 42px;
+    width: var(--content-width);
+    margin-bottom: 50px;
+}
+
+.nav-items a {
+    color: var(--white-text);
+    font-weight: 500;
+    margin-right: 36px;
+    text-decoration: none;
+}
+
+.menu-bar i {
+    font-size: 24px;
+    color: var(--white-text);
+}
+
+.copa-content,
+.highlight {
+    display: flex;
+    width: var(--content-width);
+}
+
+.copa-text{
+    font-size: 64px;
+    font-weight: 700;
+    color: var(--white-text);
+    margin: 0 0 27px 0;
+}
+
+/* Players styles */
+.players {
+    width: var(--content-width);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    row-gap: 27px;
+    margin-bottom: 165px;
+}
+
+.player {
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white-text);
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+.player img {
+    width: 300px;
+    height: 256px;
+    margin: 15px;
+}
+
+.player-details {
+    width: 300px;
+}
+
+.player-details h2 {
+    font-size: 28px;
+    margin: 0 0 10px 0;
+}
+
+.player-details p {
+    margin: 0 0 15px 0;
+    color: var(--grey-text);
+    text-align: justify;
+}
+
+/* Highlight Styles */
+.highlight {
+    width: var(--content-width);
+}
+
+.highlight-details {
+    margin-bottom: 24px;
+}
+
+.highlight-details h1 {
+    font-size: 48px;
+    color: #0A0826;
+    margin: 0 0 8px 0;
+}
+
+.highlight-details p {
+    width: 404px;
+    color: var(--grey-text);
+    text-align: justify;
+    margin: 0;
+}
+
+/* Footer styles */
+footer {
+    display: flex;
+    flex-direction: column;
+    margin: 165px 0 63px 0;
+    align-items: center;
+}
+
+footer img {
+    width: 483.87px;
+    height: 110px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-between;
+    width: 170px;
+    margin: 20px;
+}
+
+.circle {
+    height: 32px;
+    width: 32px;
+    background-color: rgb(11, 13, 23, 0.1) ;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.fa-brands {
+    color: #969BAB;
+    margin: 7.47px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+    color: #000000;
+}
+
+/* Media Query */
+/* --Mobile devices-- */
+@media only screen and (max-width: 668px) {
+    
+    header {
+        height: 100%;
+        padding: 0 15px 61px 15px;
+    }
+
+    .nav-contents {
+        width: 100%;
+    }
+
+    .nav-items {
+        display: none;
+    }
+
+    .half-width {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .all-highlights {
+        margin: 0 15px 0 15px;
+    }
+
+    .copa-content,
+    .highlight {
+        flex-direction: column;
+        row-gap: 50px;
+        width: 100%;
+    }
+    
+    .copa-text{
+        font-size: 36px;
+    }
+
+    .players {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        margin-bottom: 60px;
+    }
+
+    .highlight-details h1 {
+        font-size: 30px;
+    }
+
+    .highlight-details p {
+        width: 100%;
+    }
+
+    footer {
+        margin: 43px 0 63px 0;
+    }
+
+    footer img {
+        width: 271px;
+        height: 100%;
+    }
+    
+}
+
+/* --Laptop Devices-- */
+@media only screen and (min-width: 993px) {
+    .menu-bar {
+        display: none;
+    }
+}
